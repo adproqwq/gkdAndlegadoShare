@@ -1,1 +1,0 @@
-{"id":-2,"name":"本地订阅","version":1,"author":"gkd","apps":[{"id":"com.wn.app.np","name":"NP管理器","groups":[{"name":"开屏广告","key":0,"desc":"自动跳过开屏广告","rules":[{"activityIds":["player.normal.np.activity.SplashActivity"],"matches":["@LinearLayout > TextView[text^='跳过']"],"snapshotUrls":["https://i.gkd.li/import/13400257"]}]}]}]}
