@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "Adpro的GKD订阅",
-    "version": 2,
+    "version": 3,
     "author": "Adpro",
     "apps": [
         {
@@ -41,6 +41,49 @@
                             ],
                             "snapshotUrls": [
                                 "https://i.gkd.li/import/13423387"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "com.yikaobang.yixue",
+            "name": "医考帮",
+            "groups": [
+                {
+                    "name": "应用内会员活动弹窗",
+                    "key": 0,
+                    "activityIds": [
+                        "com.psychiatrygarden.activity.online.AnswerQuestionActivity"
+                    ],
+                    "rules": [
+                        {
+                            "matches": [
+                                "@ImageView[id='com.yikaobang.yixue:id/close']"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/13425853"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "com.baidu.input",
+            "name": "百度输入法",
+            "groups": [
+                {
+                    "name": "开屏广告",
+                    "key": 0,
+                    "rules": [
+                        {
+                            "matches": [
+                                "[text*='跳过'][text.length<=10]"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/13428541"
                             ]
                         }
                     ]
