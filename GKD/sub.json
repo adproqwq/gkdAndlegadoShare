@@ -1,7 +1,8 @@
 {
     "id": 1,
     "name": "Adpro的GKD订阅",
-    "version": 3,
+    "desc": "feat(胖乖生活): 开屏广告和更新弹窗",
+    "version": 4,
     "author": "Adpro",
     "apps": [
         {
@@ -37,7 +38,7 @@
                     "rules": [
                         {
                             "matches": [
-                                "@LinearLayout > TextView[text^='跳过']"
+                                "[text*='跳过'][text.length<=10]"
                             ],
                             "snapshotUrls": [
                                 "https://i.gkd.li/import/13423387"
@@ -84,6 +85,59 @@
                             ],
                             "snapshotUrls": [
                                 "https://i.gkd.li/import/13428541"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "com.qiekj.user",
+            "name": "胖乖生活",
+            "groups": [
+                {
+                    "name": "开屏广告",
+                    "key": 0,
+                    "rules": [
+                        {
+                            "key": 0,
+                            "matches": [
+                                "[id='com.qiekj.user:id/native_splash_view'] >n [text^='跳过']"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/12903088"
+                            ]
+                        },
+                        {
+                            "key": 1,
+                            "matches": [
+                                "[id='com.kwad.dy.sdk:id/ksad_splash_root_container'] >n [text='跳过']"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/12903086"
+                            ]
+                        },
+                        {
+                            "key": 2,
+                            "matches": [
+                                "[id='com.kwad.dy.sdk:id/ksad_splash_root_container'] >n ViewGroup > TextView + TextView + ImageView[clickable=true]"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/12903095"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "更新弹窗",
+                    "key": 1,
+                    "rules": [
+                        {
+                            "matches": [
+                                "[id='com.qiekj.user:id/btn_cancelUpdate'][text*='暂不更新']"
+                            ],
+                            "snapshotUrls": [
+                                "https://i.gkd.li/import/13435011"
                             ]
                         }
                     ]
